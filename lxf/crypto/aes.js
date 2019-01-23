@@ -2,6 +2,7 @@
 
 const c = require('crypto')
 
+// AES 是一种常见的**对称加密算法**
 module.exports = {
   // 加密
   aesEncrypt: (type, key, val, outType) => {
