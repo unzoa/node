@@ -1,4 +1,4 @@
-// koa2 倒入后是一个class, 所以大写Koa
+// koa2 导入后是一个class, 所以大写Koa
 const Koa = require('koa')
 const cors = require('koa-cors')
 const bodyParser = require('koa-bodyparser')

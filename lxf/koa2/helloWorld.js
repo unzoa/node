@@ -28,5 +28,6 @@ app.use(async (ctx, next) => {
   console.log(333)
 })
 
+app.listen(1992)
 // 111
 // 222

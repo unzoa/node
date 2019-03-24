@@ -1,6 +1,6 @@
 'use strict'
 
-const fn_index = async (ctx, next) => {
+const api_index = async (ctx, next) => {
   ctx.response.body = `
     <h1>Index</h1>
     <form action="/signIn" method="post">
@@ -10,7 +10,7 @@ const fn_index = async (ctx, next) => {
   `
 }
 
-const fn_signIn = async (ctx, next) => {
+const api_signIn = async (ctx, next) => {
   let name = ctx.request.body.name || ''
   if (name === '123') {
     ctx.response.body = `Welcome, ${name}!`
@@ -20,6 +20,6 @@ const fn_signIn = async (ctx, next) => {
 }
 
 module.exports = {
-  'GET /': fn_index,
-  'POST /signIn': fn_signIn
+  'GET /': api_index,
+  'POST /signIn': api_signIn
 }
