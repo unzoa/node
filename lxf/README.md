@@ -7,7 +7,7 @@
         * const root = path.resolve(process.argv[2] || '.')
             - root 当前文件所在目录
         * path.join(root, '/fileName')
-            || 
+            ||
         * path.resolve(__dirname, 'fileName')
 
 ### stat异步获取文件信息
